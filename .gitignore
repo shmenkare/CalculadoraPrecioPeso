@@ -1,0 +1,10 @@
+CalculadoraPrecioPeso.csproj
+CalculadoraPrecioPeso.sln
+CalculadoraPrecioPeso.suo
+.gitattributes
+/.vscode
+Properties/
+bin/
+obj/
+App.config
+.vs/
