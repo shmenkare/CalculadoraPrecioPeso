@@ -9,21 +9,21 @@ namespace CalculadoraPrecioPeso
 	{
 		static void Main(string[] args)
 		{
-            Console.WriteLine("BIENVENIDO A LA CALCULADORA DE PRECIO POR PESO");
+			Console.WriteLine("BIENVENIDO A LA CALCULADORA DE PRECIO POR PESO");
 
 			Console.WriteLine("Ingrese el valor del $ BCV");
-            float precioDollar = Convert.ToSingle(Console.ReadLine());
+			float precioDollar = Convert.ToSingle(Console.ReadLine());
 
-            Console.WriteLine("Ingrese el PRECIO del PRODUCTO A PESAR");
-            float precio = Convert.ToSingle(Console.ReadLine());
+			Console.WriteLine("Ingrese el PRECIO del PRODUCTO A PESAR");
+			float precio = Convert.ToSingle(Console.ReadLine());
 
-            Console.WriteLine("Ingrese el PESO OBTENIDO");
-            //float bolivar = 1.0f;
-            float peso = Convert.ToSingle(Console.ReadLine());
-            float resultadoD = ValorPeso(precio, peso);
-            float resultadoB = Conversion(precioDollar, resultadoD);
+			Console.WriteLine("Ingrese el PESO OBTENIDO");
+			
+			float peso = Convert.ToSingle(Console.ReadLine());
+			float resultadoD = ValorPeso(precio, peso);
+			float resultadoB = Conversion(precioDollar, resultadoD);
 
-            Console.WriteLine("El TOTAL A PAGAR ES {0}$ ó {1} Bs. ", resultadoD, resultadoB);
+			Console.WriteLine("El TOTAL A PAGAR ES {0}$ ó {1} Bs. ", resultadoD, resultadoB);
 
 			Console.ReadKey();
 
@@ -38,7 +38,7 @@ namespace CalculadoraPrecioPeso
 			float tot = prec * val;
 			return tot;
 		}
-		
-		
+
+
 	}
 }
