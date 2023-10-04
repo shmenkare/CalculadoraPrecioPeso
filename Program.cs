@@ -45,7 +45,7 @@ namespace CalculadoraPrecioPeso
 			float tot = prec * val;
 			return tot;
 		}
-
-
+		
+		
 	}
 }
